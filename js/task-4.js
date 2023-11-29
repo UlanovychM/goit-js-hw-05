@@ -13,7 +13,7 @@ const getTotalBalanceByGender = (users, gender) => {
 	return users
 		.filter(user => user.gender === gender)
 		.reduce(
-			(averageBalance, userBalance) => averageBalance + userBalance.balance,
+			(totalBalance, userBalance) => totalBalance + userBalance.balance,
 			0
 		);
 };
